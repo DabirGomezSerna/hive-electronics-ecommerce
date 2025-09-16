@@ -1,0 +1,23 @@
+/* Estilos para Button */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.btn-primary {
+  background-color: #cee008;
+  color: black;
+}
+
+.btn-primary:hover {
+  background-color: #93a007;
+}
+
+.btn:disabled {
+  background-color: rgb(54, 53, 53);
+  cursor: not-allowed;
+}
