@@ -1,10 +1,21 @@
 import "./App.css";
-import { Card } from "../Card/Card";
-import { products } from "../../data/products";
 import ProductCard from "../ProductCard/ProductCard";
 import Header from "../../layout/Header/Header";
 import Footer from "../../layout/Footer/Footer";
+import products from "../../data/products.json";
+import Layout from "../../layout/Layout";
+import Home from "../../pages/Home/Home";
 
+
+function App() {
+  return (
+    <Layout>
+      <Home />
+    </Layout>
+  );
+}
+
+/*
 function App() {
   return (
     <div className="App">
@@ -22,6 +33,6 @@ function App() {
       <Footer></Footer>
     </div>
   );
-}
+}*/
 
 export default App;

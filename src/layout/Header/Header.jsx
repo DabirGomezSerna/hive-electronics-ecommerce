@@ -2,11 +2,11 @@ import "./Header.css";
 
 export default function Header() {
   let searchTerm = "";
-  let showUserMenu = false; //changing this to false hides the user menu
   const handleSearch = () => {};
   const onChangeSearchTerm = () => {};
+  let showUserMenu = false; //changing this to false hides the user menu
   const toggleUserEvent = () => {
-    if (showUserMenu === false) showUserMenu = true;
+    if (showUserMenu) showUserMenu = true;
     else showUserMenu = false;
   };
   const closeSession = () => {};
