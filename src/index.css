@@ -20,6 +20,7 @@ code {
   --color-purple: #8677b5;
   --color-pink: #d38fb9;
   --color-yellow: #cee008;
+  --color-pale-yellow: #dde488;
   --color-green: #79bf87;
   --color-blue: #61dafb;
   --color-red: #dc2626;
@@ -35,7 +36,7 @@ code {
   --text: #0f172a;
   --muted: #475569;
   --border: #cbd5e1;
-  --accent: var(--color-strong-blue);
+  --accent: var(--color-yellow);
   --accent-contrast: #ffffff;
   --accent-rgb: 38, 51, 108;
 
