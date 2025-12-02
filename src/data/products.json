@@ -131,7 +131,7 @@
     "description": "Wireless USB and Bluetooth keyboard",
     "price": 23.99,
     "stock": 38,
-    "image": "https://placehold.co/800x600.png",
+    "image": ["img/Logitech_Wireless_Keyboard.jpg"],
     "category": {
       "_id": "68c396f6a24a7edc4233c9eb",
       "name": "Keyboards",
@@ -152,7 +152,7 @@
     "description": "Wireless USB and Bluetooth mouse",
     "price": 14.99,
     "stock": 28,
-    "image": "https://placehold.co/800x600.png",
+    "image": ["img/Logitech_Wireless_Mouse.jpg"],
     "category": {
       "_id": "68c396f6a24a7edc4233c9e9",
       "name": "Mice",
@@ -173,7 +173,7 @@
     "description": "5th generation graphics card",
     "price": 72.99,
     "stock": 12,
-    "image": "https://placehold.co/800x600.png",
+    "image": ["img/Old_Graphics_Card.jpg"],
     "category": {
       "_id": "68c396f6a24a7edc4233c9eg",
       "name": "Graphic cards",
@@ -194,7 +194,7 @@
     "description": "Gaming laptop with intel i5 core and low-end graphics card",
     "price": 99.99,
     "stock": 20,
-    "image": "https://placehold.co/800x600.png",
+    "image": ["img/i5_laptop.webp"],
     "category": {
       "_id": "68c396f6a24a7edc4233c9em",
       "name": "Laptops",
