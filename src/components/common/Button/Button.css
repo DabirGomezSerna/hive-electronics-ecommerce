@@ -28,7 +28,7 @@
 }
 
 .btn-primary:hover:not(:disabled) {
-  background: rgba(var(--accent-rgb), 0.9);
+  background: var(--color-dark-yellow);
 }
 
 .btn-secondary {
