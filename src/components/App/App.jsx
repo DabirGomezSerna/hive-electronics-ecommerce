@@ -11,7 +11,7 @@ export default function App() {
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="*" element={<div>Ruta no encontrada</div>} />
+            <Route path="*" element={<div>Page not available</div>} />
           </Routes>
         </Layout>
       </BrowserRouter>
