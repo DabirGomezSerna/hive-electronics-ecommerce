@@ -21,6 +21,7 @@ code {
   --color-pink: #d38fb9;
   --color-yellow: #cee008;
   --color-pale-yellow: #dde488;
+  --color-dark-yellow: #95a112;
   --color-green: #79bf87;
   --color-blue: #61dafb;
   --color-red: #dc2626;
@@ -37,8 +38,8 @@ code {
   --muted: #475569;
   --border: #cbd5e1;
   --accent: var(--color-yellow);
-  --accent-contrast: #ffffff;
-  --accent-rgb: 38, 51, 108;
+  --accent-contrast: #000000;
+  --accent-rgb: var(--color-dark-yellow);
 
   /* Additional variables */
   --radius: 8px;
