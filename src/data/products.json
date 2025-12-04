@@ -5,7 +5,7 @@
     "description": "Keyboard with customizable RGB lights",
     "price": 29.99,
     "stock": 30,
-    "image": ["img/RGB-keyboard.webp"],
+    "image": ["/img/RGB-keyboard.webp"],
     "category": {
       "_id": "68c396f6a24a7edc4233c9eb",
       "name": "Keyboards",
@@ -26,7 +26,7 @@
     "description": "Mouse with customizable RGB lights",
     "price": 19.99,
     "stock": 22,
-    "image": ["img/RGB-mouse.webp"],
+    "image": ["/img/RGB-mouse.webp"],
     "category": {
       "_id": "68c396f6a24a7edc4233c9e9",
       "name": "Mice",
@@ -47,7 +47,7 @@
     "description": "HD PC screen with blue light filter",
     "price": 22.99,
     "stock": 13,
-    "image": ["img/PC-screen.webp"],
+    "image": ["/img/PC-screen.webp"],
     "category": {
       "_id": "68c396f6a24a7edc4233c9e5",
       "name": "Screens",
@@ -68,7 +68,7 @@
     "description": "HEV 3.16 motherboard",
     "price": 75.99,
     "stock": 11,
-    "image": ["img/motherboard.webp"],
+    "image": ["/img/motherboard.webp"],
     "category": {
       "_id": "68c396f6a24a7edc4233c9em",
       "name": "Motherboards",
@@ -89,7 +89,7 @@
     "description": "7th generation graphics card",
     "price": 99.99,
     "stock": 8,
-    "image": ["img/graphic-card.webp"],
+    "image": ["/img/graphic-card.webp"],
     "category": {
       "_id": "68c396f6a24a7edc4233c9eg",
       "name": "Graphic cards",
@@ -110,7 +110,7 @@
     "description": "Gaming laptop with intel i7 core and high-end graphics card",
     "price": 149.99,
     "stock": 16,
-    "image": ["img/laptop.webp"],
+    "image": ["/img/laptop.webp"],
     "category": {
       "_id": "68c396f6a24a7edc4233c9em",
       "name": "Laptops",
@@ -131,7 +131,7 @@
     "description": "Wireless USB and Bluetooth keyboard",
     "price": 23.99,
     "stock": 38,
-    "image": ["img/Logitech_Wireless_Keyboard.jpg"],
+    "image": ["/img/Logitech_Wireless_Keyboard.jpg"],
     "category": {
       "_id": "68c396f6a24a7edc4233c9eb",
       "name": "Keyboards",
@@ -152,7 +152,7 @@
     "description": "Wireless USB and Bluetooth mouse",
     "price": 14.99,
     "stock": 28,
-    "image": ["img/Logitech_Wireless_Mouse.jpg"],
+    "image": ["/img/Logitech_Wireless_Mouse.jpg"],
     "category": {
       "_id": "68c396f6a24a7edc4233c9e9",
       "name": "Mice",
@@ -173,7 +173,7 @@
     "description": "5th generation graphics card",
     "price": 72.99,
     "stock": 12,
-    "image": ["img/Old_Graphics_Card.jpg"],
+    "image": ["/img/Old_Graphics_Card.jpg"],
     "category": {
       "_id": "68c396f6a24a7edc4233c9eg",
       "name": "Graphic cards",
@@ -194,7 +194,7 @@
     "description": "Gaming laptop with intel i5 core and low-end graphics card",
     "price": 99.99,
     "stock": 20,
-    "image": ["img/i5_laptop.webp"],
+    "image": ["/img/i5_laptop.webp"],
     "category": {
       "_id": "68c396f6a24a7edc4233c9em",
       "name": "Laptops",
