@@ -67,7 +67,7 @@ const Navigation = ({ isMobile = false, onLinkClick }) => {
           onClick={onLinkClick}
         >
           <Icon name="zap" size={20} />
-          Flash sale
+          Nvidia special offers
         </Link>
 
         {/* Main categories */}
@@ -150,8 +150,8 @@ const Navigation = ({ isMobile = false, onLinkClick }) => {
             <Link to="/bestsellers" className="nav-link special">
               Bestsellers
             </Link>
-            <Link to="/flash-sale" className="nav-link special">
-              Flash sale
+            <Link to="/special-offers" className="nav-link special">
+              Nvidia special offers
             </Link>
           </nav>
         </div>

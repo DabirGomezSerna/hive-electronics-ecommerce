@@ -9,7 +9,7 @@ import Loading from "../common/Loading/Loading";
 import "./ProductDetails.css";
 
 export default function ProductDetails({ productId }) {
-  //const { addToCart } = useCart();
+  const { addToCart } = useCart();
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -41,8 +41,7 @@ export default function ProductDetails({ productId }) {
   }, []);
 
   const handleAddToCart = () => {
-    //if (product) addToCart(product, 1);
-    console.log("added to cart");
+    if (product) addToCart(product, 1);
   };
 
   if (loading) {

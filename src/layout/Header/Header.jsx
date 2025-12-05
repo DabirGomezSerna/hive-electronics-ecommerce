@@ -8,6 +8,7 @@ import Navigation from "../Navigation/Navigation";
 export default function Header() {
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
   const { getTotalItems } = useCart();
+  const totalItems = getTotalItems();
 
   const [isAuth, setIsAuth] = useState(false);
   const [user, setUser] = useState([]);
@@ -50,6 +51,7 @@ export default function Header() {
           <Link to={"/"} className="logo">
             hiveElectronics.com
           </Link>
+
           <form className="search-form" onSubmit={handleSearch}>
             <input
               type="text"
@@ -65,6 +67,17 @@ export default function Header() {
 
           {/** User menu */}
           <div className="header-actions">
+            
+            {/** Shopping cart */}
+            <Link
+              to={"/cart"}
+              className="cart-btn"
+              aria-label="See shopping cart"
+            >
+              <Icon name="shoppingCart" size={24} />
+              <span className="cart-badge">{totalItems}</span>
+            </Link>
+
             <div className="user-menu">
               <button
                 className={`user-info ${isUserMenuOpen ? "active" : ""}`}
@@ -173,7 +186,7 @@ export default function Header() {
         </div>
       </div>
 
-      <Navigation/>
+      <Navigation />
     </header>
   );
 }
