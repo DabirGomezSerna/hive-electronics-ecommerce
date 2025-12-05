@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useCart } from "../../context/CartContext";
 import Icon from "../../components/common/Icon/Icon";
 import "./Header.css";
+import Navigation from "../Navigation/Navigation";
 
 export default function Header() {
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
@@ -34,11 +35,11 @@ export default function Header() {
       <div className="header-top">
         <div className="container flex-between">
           <span className="delivery-info">
-            Envío gratis en pedidos de más de $999
+            Free shipping on orders over $999
           </span>
           <div className="top-links">
-            <a href="/help">Ayuda</a>
-            <a href="/track">Rastrear pedido</a>
+            <a href="/help">Help</a>
+            <a href="/track">Track order</a>
           </div>
         </div>
       </div>
@@ -83,11 +84,11 @@ export default function Header() {
                 <div className="user-text">
                   <span className="greeting">
                     {isAuth
-                      ? `Hola, ${getDisplayName(user)}`
-                      : "Hola, Inicia sesión"}
+                      ? `Hello, ${getDisplayName(user)}`
+                      : "Hello, please log in"}
                   </span>
                   <span className="account-text">
-                    {isAuth ? "Mi Cuenta" : "Cuenta y Listas"}
+                    {isAuth ? "My Account" : "Account menu"}
                   </span>
                 </div>
                 <Icon
@@ -104,7 +105,7 @@ export default function Header() {
                     <div className="auth-section">
                       <div className="auth-header">
                         <Icon name="user" size={24} />
-                        <span>Accede a tu cuenta</span>
+                        <span>Account log in</span>
                       </div>
                       <Link
                         to="/login"
@@ -112,14 +113,14 @@ export default function Header() {
                         onClick={handleLogin}
                       >
                         <Icon name="logIn" size={16} />
-                        Iniciar Sesión
+                        Log in
                       </Link>
                       <button
                         className="auth-btn secondary"
                         onClick={handleRegister}
                       >
                         <Icon name="userPlus" size={16} />
-                        Crear Cuenta
+                        Create account
                       </button>
                     </div>
                   ) : (
@@ -141,26 +142,26 @@ export default function Header() {
                       <div className="user-links">
                         <Link to="/profile" className="user-link">
                           <Icon name="user" size={16} />
-                          Mi Cuenta
+                          My profile
                         </Link>
                         <Link to="/orders" className="user-link">
                           <Icon name="package" size={16} />
-                          Mis Pedidos
+                          My orders
                         </Link>
                         <Link to="/wishlist" className="user-link">
                           <Icon name="heart" size={16} />
-                          Lista de Deseos
+                          Wishlist
                         </Link>
                         <Link to="/settings" className="user-link">
                           <Icon name="settings" size={16} />
-                          Configuración
+                          Settings
                         </Link>
                       </div>
 
                       <div className="logout-section">
                         <button className="logout-btn" onClick={handleLogout}>
                           <Icon name="logOut" size={16} />
-                          Cerrar Sesión
+                          Close session
                         </button>
                       </div>
                     </div>
@@ -171,6 +172,8 @@ export default function Header() {
           </div>
         </div>
       </div>
+
+      <Navigation/>
     </header>
   );
 }
