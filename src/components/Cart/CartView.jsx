@@ -5,8 +5,6 @@ import Icon from "../common/Icon/Icon";
 export default function CartView() {
   const { cartItems, removeFromCart, updateQuantity } = useCart();
 
-  let cartItemsTest = 1;
-
   return (
     <div className="cart-view">
       <div className="cart-view-header">
@@ -15,14 +13,6 @@ export default function CartView() {
         </h2>
       </div>
 
-      {/**cartItems &&
-        cartItems.map((item) => (
-          <div className="cart-item" key={item._id}>
-            <div className="cart-item-image">
-              <img src={item.image[0]} alt={item.name} loading="lazy" />
-            </div>
-          </div>
-        ))*/}
       {cartItems &&
         cartItems.map((item) => (
           <div className="cart-item" key={item._id}>
