@@ -1,34 +1,78 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useCart } from "../../context/CartContext";
+import {
+  getCurrentUser,
+  isAuthenticated,
+  logout,
+} from "../../services/userServices";
 import Icon from "../../components/common/Icon/Icon";
-import "./Header.css";
 import Navigation from "../Navigation/Navigation";
+
+import "./Header.css";
 
 export default function Header() {
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
   const { getTotalItems } = useCart();
   const totalItems = getTotalItems();
 
-  const [isAuth, setIsAuth] = useState(false);
+  const [isAuth, setIsAuth] = useState(true);
   const [user, setUser] = useState([]);
+
+  useEffect(() => {
+    const updateAuthState = () => {
+      setIsAuth(isAuthenticated());
+      setUser(getCurrentUser());
+    };
+
+    window.addEventListener("storage", updateAuthState);
+    updateAuthState();
+
+    return () => {
+      window.addEventListener("storage", updateAuthState);
+    };
+  }, []);
 
   let searchTerm = "";
   const handleSearch = () => {};
   const onChangeSearchTerm = () => {};
-  const getUserInitials = () => {};
-  const getDisplayName = () => {};
+
+  const getUserInitials = (userData) => {
+    if (!userData) return "U";
+    const name =
+      userData.displayName || userData.name || userData.email || "Usuario";
+    return name
+      .split(" ")
+      .map((n) => n[0])
+      .join("")
+      .toUpperCase()
+      .slice(0, 2);
+  };
+
+  const getDisplayName = (userData) => {
+    if (!userData) return "Usuario";
+    return userData.displayName || userData.name || userData.email || "Usuario";
+  };
 
   const handleUserMenuToggle = () => {
     setIsUserMenuOpen(!isUserMenuOpen);
   };
 
-  const handleLogin = () => {};
+  const handleLogin = () => {
+    setIsUserMenuOpen(false);
+  };
 
-  const handleRegister = () => {};
+  const handleRegister = () => {
+    setIsUserMenuOpen(false);
+  };
 
-  const handleLogout = () => {};
-  const closeSession = () => {};
+  const handleLogout = () => {
+    logout();
+    setIsAuth(false);
+    setUser(null);
+    setIsUserMenuOpen(false);
+    window.location.reload();
+  };
 
   return (
     <header>
@@ -67,7 +111,6 @@ export default function Header() {
 
           {/** User menu */}
           <div className="header-actions">
-            
             {/** Shopping cart */}
             <Link
               to={"/cart"}

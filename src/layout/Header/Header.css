@@ -202,6 +202,17 @@ header {
   min-width: 0;
 }
 
+.user-initials {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-black);
+  user-select: none;
+  background-color: var(--color-pale-yellow);
+  border-radius: 30px;
+  padding: 15px;
+  margin: 10px;
+}
+
 .account-text {
   font-size: 14px;
   font-weight: 600;
@@ -225,7 +236,7 @@ header {
   transform: rotate(180deg);
 }
 
-.auth-section{
+.auth-section {
   padding: 20px;
 }
 
@@ -265,6 +276,95 @@ header {
   overflow: hidden;
 }
 
+.user-section {
+  padding: 20px;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 16px;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  flex: 1;
+}
+
+.user-name {
+  font-weight: 600;
+  color: var(--text);
+  font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.user-email {
+  color: var(--muted);
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.user-links {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+
+.user-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text);
+  text-decoration: none;
+  padding: 10px 12px;
+  font-size: 14px;
+  transition: all 0.2s;
+  border-radius: 8px;
+}
+
+.user-link:hover {
+  background: var(--bg);
+  color: var(--accent);
+  transform: translateX(4px);
+}
+
+.logout-section {
+  border-top: 1px solid var(--border);
+  padding-top: 16px;
+}
+
+.logout-btn {
+  width: 100%;
+  padding: 10px 16px;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.logout-btn:hover {
+  background: var(--color-red);
+  border-color: var(--color-red);
+  color: var(--color-white);
+  transform: translateY(-1px);
+}
 
 /* Auth buttons */
 .auth-btn {
