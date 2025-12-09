@@ -20,12 +20,12 @@ export default function ProductDetails({ productId }) {
     getProductById(productId)
       .then((foundProduct) => {
         if (!foundProduct) {
-          setError("Producto no encontrado");
+          setError("Product not found");
         } else {
           setProduct(foundProduct);
         }
       })
-      .catch(() => setError("Ocurrió un error al cargar el producto."))
+      .catch(() => setError("Encountered error while loading product."))
       .finally(() => setLoading(false));
   }, [productId]);
 

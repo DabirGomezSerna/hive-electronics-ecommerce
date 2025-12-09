@@ -7,69 +7,68 @@ export default function Footer() {
       <div className="container">
         <div className="footer-content">
           <div className="footer-section">
-            <h3>Conoce HiveElectronics.com</h3>
+            <h3>About hiveElectronics</h3>
             <ul>
               <li>
-                <a href="placeholder">Acerca de nosotros</a>
+                <a href="placeholder">About us</a>
               </li>
               <li>
-                <a href="placeholder">Prensa</a>
+                <a href="placeholder">News</a>
               </li>
               <li>
-                <a href="placeholder">Misión</a>
+                <a href="placeholder">Mission</a>
               </li>
               <li>
-                <a href="placeholder">Contáctanos</a>
+                <a href="placeholder">Contact us</a>
               </li>
             </ul>
           </div>
           <div className="footer-section">
-            <h3>Atención al cliente</h3>
+            <h3>Customer support</h3>
             <ul>
               <li>
-                <a href="placeholder">Centro de Ayuda</a>
+                <a href="placeholder">Help center</a>
               </li>
               <li>
-                <a href="placeholder">Reclamos</a>
+                <a href="placeholder"></a>
               </li>
             </ul>
           </div>
           <div className="footer-section">
-            <h3>Mi cuenta</h3>
+            <h3>My account</h3>
             <ul>
               <li>
-                <a href="placeholder">Mi cuenta</a>
+                <a href="placeholder">My account</a>
               </li>
             </ul>
           </div>
           <div className="footer-section">
-            <h3>Síguenos</h3>
+            <h3>Follow us</h3>
             <ul>
               <li>
                 <a href="placeholder">
-                  Facebook<Icon className="social-icons" name="facebook" size={20}></Icon>
+                  <Icon className="social-icons" name="facebook" size={20}></Icon>
                 </a>
               </li>
               <li>
-                <a href="placeholder">X<Icon className="social-icons" name="twitter" size={20}></Icon></a>
+                <a href="placeholder"><Icon className="social-icons" name="twitter" size={20}></Icon></a>
               </li>
               <li>
-                <a href="placeholder">Instagram<Icon className="social-icons" name="instagram" size={20}></Icon></a>
+                <a href="placeholder"><Icon className="social-icons" name="instagram" size={20}></Icon></a>
               </li>
               <li>
-                <a href="placeholder">Youtube<Icon className="social-icons" name="youtube" size={20}></Icon></a>
+                <a href="placeholder"><Icon className="social-icons" name="youtube" size={20}></Icon></a>
               </li>
             </ul>
           </div>
         </div>
         <div className="footer-bottom">
           <span>
-            &copy; {new Date().getFullYear()} HiveElectronics.com Todos los
-            derechos reservados
+            &copy; {new Date().getFullYear()} hiveElectronics.com All rights reserved
           </span>
           <nav>
-            <a href="/privacy">Política de Privacidad</a>
-            <a href="/terms">Términos y Condiciones</a>
+            <a href="/privacy">Privacy policy</a>
+            <a href="/terms">Terms and conditions</a>
             <a href="/cookies">Cookies</a>
           </nav>
         </div>
