@@ -40,9 +40,6 @@ export default function LoginForm() {
           <div className="user-demo">
             <strong>John Doe:</strong> john@email.com / john123
           </div>
-          <div className="user-demo">
-            <strong>Jane Doe:</strong> jane@email.com / jane123
-          </div>
         </div>
         <form className="login-form" onSubmit={onSubmit}>
           <div className="form-group">
