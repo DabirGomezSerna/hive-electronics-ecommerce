@@ -1,3 +1,19 @@
+HIVEELECECTRONICS ECOMMERCE
+Hive Electronics is an online ecommerce that sells computer parts and any peripherals that may be associated with those. The store sells both parts to make your own PC (motherboards, graphic cards, etc.) and also sells Laptops for those customers looking to get something ready made. 
+
+In the future, we plan to offer a "Build your own PC" service, which will allow our users to assemble a PC with the parts from our store, to see if they're all compatible before buying them.
+
+HOW TO RUN
+1. Create a new react app, run following command in terminal: 
+npx create-react-app folder-name
+2. This project utilizes React Routes, so you'll have to install React routes. Run the following command in terminal: 
+npm install react-router-dom
+3. Download the project, and paste and replace in the created folder
+4. In terminal, while in the folder location, run the following command:
+npm start
+
+-------------------------------------------------------------------------
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
