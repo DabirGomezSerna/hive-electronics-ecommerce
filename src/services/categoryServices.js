@@ -5,7 +5,7 @@ export const fetchCategories = async () => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(categories);
-    }, 1200); // 1.2 segundos de delay
+    }, 1200); 
   });
 };
 
